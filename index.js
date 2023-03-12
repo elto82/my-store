@@ -24,7 +24,7 @@ app.use(cors(corsOptions)); */
 const whitelist = [
   'http://127.0.0.1:5500',
   'http://localhost:3001',
-  'https://myapp.com',
+  'https://my-store-5aip.onrender.com/',
 ];
 const options = {
   origin: (origin, callback) => {
