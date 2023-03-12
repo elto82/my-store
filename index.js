@@ -21,7 +21,7 @@ app.use(express.json());
 };
 app.use(cors(corsOptions)); */
 
-const whitelist = [
+/* const whitelist = [
   'http://127.0.0.1:5500',
   'http://localhost:3001',
   'https://my-store-5aip.onrender.com/',
@@ -34,8 +34,8 @@ const options = {
       callback(new Error('no permitido'));
     }
   },
-};
-app.use(cors(options));
+}; */
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('hi my server in express');
